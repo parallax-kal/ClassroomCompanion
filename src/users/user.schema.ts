@@ -17,13 +17,16 @@ export class User {
   @Prop({ required: true })
   nationality: string;
 
+  @Prop({ required: true })
+  profile: string;
+
   @Prop({
     required: true,
     enum: [
       'ADMIN',
       'TEACHER',
       'TEACHER_ASSISTANT',
-      'PO_MANAGE',
+      'PO_MANAGER',
       'CHIEF_MANAGE',
     ],
   })
